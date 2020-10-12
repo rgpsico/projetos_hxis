@@ -1,0 +1,13 @@
+{
+    "name": "Roger Neves",
+    "description": "Descrição do projeto woocomerce.",
+    "authors": [
+        {
+            "name": "roger neves",
+            "email": "rgyr2010@hotmail.com"
+        }
+    ],
+    "require": {
+          "automattic/woocommerce": "^3.0"
+    }
+}

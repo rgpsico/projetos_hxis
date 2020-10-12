@@ -1,0 +1,60 @@
+thank you for downloading this script:
+
+how to install it?
+1.
+use the phpauth.sql file to make the required tables in mysql database and the edit the settings in admin/inc/db.inc.php
+
+2.
+go to www.yoursite.com/phpauth/admin/ and log in as 
+user: admin
+pass: pass
+
+3.
+go to "site info" and change the settings to your own site.
+
+4.
+change your own username and password in "update profile" section.
+
+5.
+read the site codes page for more information....
+
+6.
+edit this line include("admin/inc/db.inc.php"); in op.php if the db file's path is diffrenet then this.
+in op.php and upload in to your root, so that link to it becomes www.yoursite.com/op.php
+
+
+for more information on how to make other pages into  members only pages go to www.yoursite.com/phpauth/login.php
+username:user
+pass:pass
+
+
+TIP::::: IT IS BEST TO UPLOAD THE PHPAUTH FOLDER CONTENT INTO YOUR ROOT FOLDER, SO IT WOULD BECOME WWW.YOURSITE.COM/
+TIP::::: NEVER RENAME "admin" FOLDER!!!!!!!!!!!!!                                         
+///////////////////////////////////////////
+///////////////////////////////////////
+//////////
+///////
+
+content of main.php file(for your reading only)
+welcome to phpauth 1.5, you are now logged in as <?php print("$username"); ?>
+
+Add:
+Step 1:<?php include("inc/VerifyLogin.php"); ?>
+at the top any page you want only the registered users to see, make sure you replce the content of this (main.php) file with your own, leavening the top 4 lines!
+
+
+(optional)Step 2: If you need to display user information on a page then use:
+for email: <?php echo $email; ?>
+for last login date: <?php echo $lastl; ?>
+for username: <?php echo $username; ?>
+For this to work, step one must be taken!
+Step 3: Useful Links:
+Change Password - changepass.php
+Lost Password - lostpass.php
+Logout - logout.php
+You Need to link to these files from your rest of the site.
+
+
+
+
+Be part of Qadsscripts.t2u.com, submit your own scripts to it and over 1000 users a week will see it!
